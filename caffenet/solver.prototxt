@@ -1,0 +1,25 @@
+net: "train_val.prototxt"
+test_iter: 84
+test_interval: 660
+# lr for fine-tuning should be lower than when starting from scratch
+#base_lr: 0.001
+#lr_policy: "step"
+#gamma: 0.1
+# stepsize should also be lower, as we're closer to being done
+#stepsize: 10000
+#momentum: 0.9
+#weight_decay: 0.0005
+
+display: 100
+max_iter: 50000
+base_lr: 0.0006
+momentum: 0.9
+gamma: 0.00001       # 学习速率变化因子
+weight_decay: 0.0005
+power: 0.75
+# The learning rate policy
+lr_policy: "inv"
+snapshot: 5000
+snapshot_prefix: "models/oxford2"
+# uncomment the following to default to CPU mode solving
+solver_mode: GPU

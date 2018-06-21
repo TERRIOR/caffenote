@@ -1,0 +1,2 @@
+compute_image_mean coffee_trainb_lmdb coffeemean.binaryproto
+PAUSE
