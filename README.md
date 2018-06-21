@@ -1,2 +1,2 @@
 # caffenote
-note for CAFFE
+notes for CAFFE
